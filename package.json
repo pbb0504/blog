@@ -1,0 +1,15 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "pbb's blog",
+  "main": "index.js",
+  "author": "panbinbin",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.8"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
