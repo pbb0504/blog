@@ -9,12 +9,18 @@ export default defineUserConfig<DefaultThemeOptions>({
 
   themeConfig: {
     logo: "https://vuejs.org/images/logo.png",
+    search: true,
+    searchMaxSuggestions: 10,
+    smoothScroll: true,
     navbar: [
       {
         text: "guide",
         link: "/guide/",
       },
-      "/README.md",
+      {
+        text: 'index',
+        link: '/README.md'
+      }
     ],
   },
 });
