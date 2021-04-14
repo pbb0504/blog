@@ -23,6 +23,10 @@ export default defineUserConfig<DefaultThemeOptions>({
     lastUpdatedText: '最近更新', */
     navbar: [
       {
+        text: 'Vue',
+        link: '/vue/'
+      },
+      {
         text: 'Java',
         link: '/java/'
       },
@@ -36,6 +40,18 @@ export default defineUserConfig<DefaultThemeOptions>({
       }
     ],
     sidebar: {
+      '/vue/': [
+        {
+          isGroup: true,
+          text: 'VuePress',
+          children: [
+            {
+              text: '从0开始',
+              link: '/vue/VuePress搭建.md',
+            }
+          ]
+        }
+      ],
       '/java/': [
         {
           isGroup: true,
