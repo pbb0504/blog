@@ -3,12 +3,13 @@ import type { DefaultThemeOptions } from "vuepress";
 
 export default defineUserConfig<DefaultThemeOptions>({
   lang: "zh-CN",
-  title: "Hello VuePress",
+  title: "潘彬彬的博客",
   description: "Just playing around",
   base: "/blog/",
 
   themeConfig: {
     logo: "https://vuejs.org/images/logo.png",
+    
     search: true,
     searchMaxSuggestions: 10,
     smoothScroll: true,
@@ -22,6 +23,10 @@ export default defineUserConfig<DefaultThemeOptions>({
     lastUpdatedText: '最近更新', */
     navbar: [
       {
+        text: 'Java',
+        link: '/java/'
+      },
+      {
         text: "guide",
         link: "/guide/",
       },
@@ -31,11 +36,46 @@ export default defineUserConfig<DefaultThemeOptions>({
       }
     ],
     sidebar: {
+      '/java/': [
+        {
+          isGroup: true,
+          text: 'java基础',
+          children: [
+            {
+              text: 'Java学习路线',
+              link: '/java/Java学习路线.md'
+            },
+            {
+              text: 'Java核心技术卷一',
+              link: '/java/JavaSE(Java核心技术卷一).md'
+            },
+            {
+              text: 'XML',
+              link: '/java/xml.md'
+            },
+            {
+              text: '注解',
+              link: '/java/注解.md'
+            },
+          ]
+        }
+      ],
+      // 在/guide/下设置侧边栏
       '/guide/': [
+        // 对象数组之1，一个小组
         {
           isGroup: true,
           text: 'guide',
-          children: ['/guide/demo1.md','/guide/demo2.md'],
+          children: [
+            {
+              text: '开始',
+              link: '/guide/getting-started.md',
+            },
+            {
+              text: '关于我',
+              link: '/guide/about-me.md',
+            },
+          ],
         },
       ]
     }
