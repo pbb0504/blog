@@ -9,7 +9,7 @@ actions:
   link: /guide/getting-started.md
   type: primary
 - text: 关于我
-  link: /guide/AboutMe.md
+  link: /guide/about-me.md
   type: secondry
 features:
 - title: 简洁至上

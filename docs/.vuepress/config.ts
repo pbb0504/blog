@@ -31,10 +31,6 @@ export default defineUserConfig<DefaultThemeOptions>({
         link: "/java/",
       },
       {
-        text: "向导",
-        link: "/guide/",
-      },
-      {
         text: "首页",
         link: "/README.md",
       },
@@ -58,15 +54,6 @@ export default defineUserConfig<DefaultThemeOptions>({
             "/java/注解.md",
             "/java/cookie和session.md",
           ],
-        },
-      ],
-      // 在/guide/下设置侧边栏
-      "/guide/": [
-        // 对象数组之1，一个小组
-        {
-          isGroup: true,
-          text: "guide",
-          children: ["/guide/getting-started.md", "/guide/about-me.md"],
         },
       ],
     },
