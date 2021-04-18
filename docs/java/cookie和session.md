@@ -6,7 +6,35 @@
 <img :src="$withBase('images/http无状态.png')" alt="http无状态">
 
 ## cookie
-Cookie 会根据从服务器端发送的响应报文内的一个叫做Set-Cookie的首部字段信息，通知客户端保存Cookie。当下次客户端再往该服务器发送请求时，客户端会自动在请求报文中加入Cookie 值后发送出去。
-服务器端发现客户端发送过来的Cookie 后，会去检查究竟是从哪一个客户端发来的连接请求，然后对比服务器上的记录，最后得到之前的状态信息。
+
+Cookie 会根据从服务器端发送的响应报文内的一个叫做 Set-Cookie 的首部字段信息，通知客户端保存 Cookie。当下次客户端再往该服务器发送请求时，客户端会自动在请求报文中加入 Cookie 值后发送出去。
+服务器端发现客户端发送过来的 Cookie 后，会去检查究竟是从哪一个客户端发来的连接请求，然后对比服务器上的记录，最后得到之前的状态信息。
 <img :src="$withBase('images/从服务器获取cookie.png')" alt="从服务器获取cookie">
 <img :src="$withBase('images/使用cookie发起请求.png')" alt="使用cookie发起请求">
+下面开始解释图中步骤
+
+1. 请求报文（此时没有 Cookie）
+
+```json
+GET /reader/ HTTP/1.1
+Host: hackr.jp
+*首部字段内没有Cookie的相关信息
+```
+
+2. 响应报文（服务器端生成 Cookie 信息）
+
+```json
+HTTP/1.1 200 OK
+Date: Thu, 12 Jul 2012 07:12:20 GMT
+Server: Apache
+＜Set-Cookie: sid=1342077140226724; path=/; expires=Wed,10-Oct-12 07:12:20 GMT＞
+Content-Type: text/plain; charset=UTF-8
+```
+
+3. 请求报文（自动发送保存着的 Cookie 信息）
+
+```json
+GET /image/ HTTP/1.1
+Host: hackr.jp
+Cookie: sid=1342077140226724
+```
