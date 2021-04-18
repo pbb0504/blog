@@ -1,6 +1,6 @@
-## XML
+# XML
 
-### 概念：Extensible Markup Language 可扩展标记语言
+## 概念：Extensible Markup Language 可扩展标记语言
 
 	* 可扩展：标签都是自定义的。<user> <student>
  * 功能
@@ -13,7 +13,7 @@
       	* 语法严格  语法松散
          	* 存储数据  展示数据
 
-### 语法：
+## 语法
 
  * 基本语法：
    1. xml文档的后缀名：.xml
@@ -53,7 +53,7 @@
         * 本地：<!DOCTYPE 根标签名 SYSTEM "dtd文件的位置">
         * 网络：<!DOCTYPE 根标签名 PUBLIC "dtd文件名字" "dtd文件位置URL">
 
-### 解析:操作xml文档，将文档中的数据读取到内存中
+## 解析:操作xml文档，将文档中的数据读取到内存中
 
  * 操作xml文档：
    1. 解析（读取）：将文档中的数据读取到内存中
