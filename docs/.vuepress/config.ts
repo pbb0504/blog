@@ -50,6 +50,7 @@ export default defineUserConfig<DefaultThemeOptions>({
           children: [
             "/java/Java学习路线.md",
             "/java/JavaSE(Java核心技术卷一).md",
+            "/java/设计模式.md",
             "/java/xml.md",
             "/java/注解.md",
             "/java/cookie和session.md",
