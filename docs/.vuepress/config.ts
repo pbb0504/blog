@@ -8,6 +8,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   description: "Just playing around",
   base: "/blog/",
 
+  // 主题配置
   themeConfig: {
     logo: "https://vuejs.org/images/logo.png",
 
@@ -59,4 +60,23 @@ export default defineUserConfig<DefaultThemeOptions>({
       ],
     },
   },
+
+  // 插件配置
+  /* plugins: [
+    [
+      '@vuepress/docsearch',
+      {
+        apiKey: '<API_KEY>',
+        indexName: '<INDEX_NAME>',
+        locales: {
+          '/': {
+            placeholder: 'Search Documentation',
+          },
+          '/zh/': {
+            placeholder: '搜索文档',
+          },
+        },
+      },
+    ],
+  ], */
 });
