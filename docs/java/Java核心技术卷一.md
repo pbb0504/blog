@@ -1,4 +1,4 @@
-# JavaSE (Java 核心技术卷一)
+# Java 核心技术卷一
 
 ## 第 1 章 Java 程序设计概述
 
@@ -209,3 +209,164 @@ StringBuilder sb2 = new StringBuilder("hello");
 这个过程称为重载解析（overloading resolution）。
 
 **关于重载还有其它的知识点，后期再说**
+
+#### 4.6.2 默认域初始化
+
+如果创造变量的时候没有给变量赋值，那么 java 会默认给变量赋予一个值。
+| 类型 | 值 |
+| :-: | :-: |
+| int | 0 |
+| long | 0 |
+| boolean | false |
+| float | 0.0 |
+| double | 0.0 |
+| char | /u0000(NULL) |
+| string | NULL |
+| Object | NULL |
+| [] | NULL |
+| [int,float...] | [0,0.0,...] |
+
+#### 4.6.3 无参数的构造器
+
+很多类会包含一个无参数的构造函数，对象由无参构造函数创建时，里面的成员变量会被设置为一个默认值（如果没有被特殊赋值的话）。
+
+```java
+class Other {
+    private int a;
+
+    public int getA(){
+        return a;
+    }
+}
+
+Other other = new Other();
+System.out.println(other.getA());
+output: 0
+```
+
+:::: tip
+如果在编写类时没有提供无参的构造器，那么系统会默认提供一个无参数构造器。构造器会将所有的成员变量设置为相应的默认值。数值型设置为 0，布尔型设置为 false，其它类型设置为 null。
+::::
+
+:::: warning
+如果在编写类时已经提供有参构造器，此时再使用无参构造器创建实例，会产生错误。
+::::
+
+#### 4.6.4 显示域初始化
+
+使用有参构造函数，或者在声明成员变量时初始化变量。
+
+#### 4.6.5 参数名
+
+请采用易懂的参数名，不要嫌长
+
+#### 4.6.6 调用另一个构造器
+
+如果构造器中使用`this(args[])`这样的形式，即可引用类中其它的构造函数
+
+:::: tip
+这样的引用必须是方法中的第一条语句
+否则会有错误：Call to 'this()' must be first statement in constructor body
+::::
+
+#### 4.6.7 初始化块
+
+前面有两种初始化数据域的方法
+
+- 在构造器中设置值
+- 在声明中赋值
+  现在来介绍第三种机制，称为**初始化块**(initialization block)。在类的声明中，可以包含多个代码块，只要类的对象被构造，这些块就会执行。
+
+```java
+class Employee {
+    private static int nextId;
+
+    private int id;
+    private String name;
+    private double salary;
+
+    // initialization block
+    {
+        id = nextId;
+        nextId++;
+    }
+
+    public Employee(String n, double s){
+        this.name = n;
+        this.salary = s;
+    }
+
+    public Employee(){
+        this.name = "";
+        this.salary = 0;
+    }
+}
+```
+
+:::: warning
+一般来说，初始化块放在需要初始化的变量之后。但是即使是在块后面定义的变量，也可以在块中初始化，但是**不建议这样做**，有可能会产生循环定义的问题。
+::::
+
+**调用构造器的具体处理步骤**
+
+1. 所有数据域被初始化为默认值（即使在后面的构造器中没有提及此变量）
+2. 按照在类声明中出现的次序，依次执行所有域初始化语句和初始化块
+3. 如果构造器调用了第二个构造器，则先执行第二个构造器
+4. 继续执行构造器
+
+:::: details 实例代码
+
+```java
+class Other {
+    private int a;
+    private String s;
+    public Other(){
+        this("");
+    }
+    public Other(String s){
+        this.s = "1";
+    }
+    public int getA(){
+        return a;
+    }
+}
+```
+
+**这段代码的执行过程为**
+
+1. 初始化 a=0，s=null
+2. 执行`Other()`，调用`Other(String s)`给 s 赋值为"1"
+3. 返回`Other()`方法，执行完毕
+
+::::
+
+**静态域**
+
+可以在声明静态域时提供初始化值，或者在静态初始化块中进行初始化。
+如果代码比较简单：`private static int nextId = 0`，可以直接进行初始化
+如果初始化的代码比较复杂，建议放在静态初始化块中
+
+```java
+static {
+    Random generator = new Random();
+    nextId = generator.nextInt(10000);
+}
+```
+
+在类第一次加载的时候，将会进行静态域的初始化。与实例域一样，除非显式地设置值，否则采用默认值。所有的静态初始化语句和静态初始化块都按照类定义的顺序执行。
+
+:::: tip
+
+在JDK6之前，即使没有main方法也能编写java程序
+
+```java
+class Main {
+    static {
+        System.out.println("Hello World!");
+    }
+}
+```
+
+当使用`java Main`调用此类时，会先执行静态代码块，打印语句，然后显示消息，指出main方法未定义。在java7之后，java程序会优先判断是否有main方法
+
+::::

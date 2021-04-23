@@ -13,6 +13,7 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "@vuepress/plugin-docsearch": "^2.0.0-alpha.1"
+    "@vuepress/plugin-docsearch": "^2.0.0-alpha.1",
+    "nprogress": "^0.2.0"
   }
 }

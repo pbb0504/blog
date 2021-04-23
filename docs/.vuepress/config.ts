@@ -50,7 +50,7 @@ export default defineUserConfig<DefaultThemeOptions>({
           text: "java基础",
           children: [
             "/java/Java学习路线.md",
-            "/java/JavaSE(Java核心技术卷一).md",
+            "/java/Java核心技术卷一.md",
             "/java/设计模式.md",
             "/java/xml.md",
             "/java/注解.md",
@@ -62,8 +62,8 @@ export default defineUserConfig<DefaultThemeOptions>({
   },
 
   // 插件配置
-  /* plugins: [
-    [
+  plugins: [
+    /* [
       '@vuepress/docsearch',
       {
         apiKey: '<API_KEY>',
@@ -77,6 +77,7 @@ export default defineUserConfig<DefaultThemeOptions>({
           },
         },
       },
-    ],
-  ], */
+    ], */
+    ["@vuepress/plugin-nprogress"],
+  ],
 });
