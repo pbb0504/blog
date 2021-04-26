@@ -383,3 +383,85 @@ class Main {
 
 ### 4.7 包
 
+Java 使用包将类组织起来。所有标准的 Java 包都处于 java 和 javax 包中。
+
+如果两个人同时创建了相同名字的类，那么不同的包名，就保证他们的类不会冲突。
+
+#### 4.7.1 类的导入
+
+#### 4.7.2 静态导入
+
+形如`import static java.lang.System.*`这样的导入形式即为静态导入。
+如此之后，就可使用 System 类中的静态方法和域。
+
+```java
+out.println("hello world");
+exit(0);
+```
+
+另外，还可以导入特定的方法和域。
+`import static java.lang.System.out`
+
+#### 4.7.3 将类放入包中
+
+#### 4.7.4 包作用域
+
+详细地写一下 private、protect、缺省、public 的作用域
+
+### 4.8 类路径（ClassPath）
+
+此节见[廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/1252599548343744/1260466914339296)
+
+**classpath**是什么？
+
+可以从字面意义上看，**class**即 java 编译后的字节码文件，**path**即路径，合在一起来说就是字节码文件的路径。
+
+`classpath`是 JVM 会用到的一个环境变量，用来指示 JVM 如何找到 class 文件。如果 JVM 需要执行 class 文件`com.company.Hello.class`，所以需要知道相应文件的路径才行。
+
+在不同的系统上，类路径的写法有所不同，在 windows 系统上，多个路径用`;`分隔，带空格的目录用`""`包裹
+
+```bash
+C:\work\project1\bin;C:\shared;"D:\My Documents\project1\bin"
+```
+
+在 linux 系统，用`:`来分割路径
+
+```bash
+/usr/shared:/usr/local/bin:/home/liaoxuefeng/bin
+```
+
+假设现在的 classpath 是`.;C:\work\project1\bin;C:\shared`，JVM 在加载`ab.xy.Hello`这个类时，依次查找的路径为
+
+- 当前目录\ab\xy\Hello.class
+- C:\work\project1\bin\ab\xy\Hello.class
+- C:\shared\ab\xy\Hello.class
+
+`.`代表当前目录，JVM 会依次查找各个路径，找到正确的路径后就不再继续查找，如果没有找到路径，就报错。
+
+`classpath`的设置有两种方式
+
+1. 在系统环境变量中设置，不推荐
+2. 在 JVM 启动时设置，推荐
+   ```bash
+   java -classpath .;C:\work\project1\bin;C:\shared abc.xyz.Hello
+   ```
+   启动时设置`-classpath`参数，或`-cp`
+   如果没有设置此参数，默认为`.`
+
+在 IDE 中运行程序，会自动设置项目的 bin 目录和 jar 包为`classpath`
+
+有时候，我们会引入 java 自带的核心库的代码，这些 java 文件也需要加入 classpath 中吗？
+
+:::: danger 不需要！！！
+不要把任何 Java 核心库添加到 classpath 中！JVM 根本不依赖 classpath 加载核心库！
+::::
+
+一般来说不需要设置`classpath`，使用默认的`.`即可
+
+**jar 包**
+
+如果有很多的`class`文件放置在不同的目录中，使用起来肯定不方便，如果把他们放在同一个地方就好了！
+
+jar包把`package`组织的目录层级，以及目录下的所有文件（包括`.class`文件和其他文件）都打包好。
+
+jar包实际上时zip格式的压缩文件，jar包相当于目录
