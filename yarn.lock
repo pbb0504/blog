@@ -286,9 +286,9 @@
   integrity sha512-giAlZwstKbmvMk1OO7WXSj4OZ0keXAcl2TQq4LWHiiPH2ByaH7WeUzng+Qej8UPxxv+8lRTuouo0iaNDBuzIBA==
 
 "@types/http-proxy@^1.17.5":
-  version "1.17.5"
-  resolved "https://registry.npmjs.org/@types/http-proxy/-/http-proxy-1.17.5.tgz#c203c5e6e9dc6820d27a40eb1e511c70a220423d"
-  integrity sha512-GNkDE7bTv6Sf8JbV2GksknKOsk7OznNYHSdrtvPJXO0qJ9odZig6IZKUi5RFGi6d1bf6dgIAe4uXi3DBc7069Q==
+  version "1.17.6"
+  resolved "https://registry.npmjs.org/@types/http-proxy/-/http-proxy-1.17.6.tgz#62dc3fade227d6ac2862c8f19ee0da9da9fd8616"
+  integrity sha512-+qsjqR75S/ib0ig0R9WN+CDoZeOBU6F2XLewgC4KVgdXiNHiKKHFEMRHOrs5PbYE97D5vataw5wPj4KLYfUkuQ==
   dependencies:
     "@types/node" "*"
 
@@ -332,9 +332,9 @@
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
 "@types/node@*":
-  version "15.0.3"
-  resolved "https://registry.npmjs.org/@types/node/-/node-15.0.3.tgz#ee09fcaac513576474c327da5818d421b98db88a"
-  integrity sha512-/WbxFeBU+0F79z9RdEOXH4CsDga+ibi5M8uEYr91u3CkT/pdWcV8MCook+4wDPnZBexRdwWS+PiVZ2xJviAzcQ==
+  version "15.3.0"
+  resolved "https://registry.npmjs.org/@types/node/-/node-15.3.0.tgz#d6fed7d6bc6854306da3dea1af9f874b00783e26"
+  integrity sha512-8/bnjSZD86ZfpBsDlCIkNXIvm+h6wi9g7IqL+kmFkQ+Wvu3JrasgLElfiPgoo8V8vVfnEi0QVS12gbl94h9YsQ==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -436,6 +436,11 @@
   dependencies:
     "@vue/compiler-dom" "3.0.11"
     "@vue/shared" "3.0.11"
+
+"@vue/devtools-api@^6.0.0-beta.10":
+  version "6.0.0-beta.10"
+  resolved "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.0.0-beta.10.tgz#f39da7618cee292e39c7274227c34163e30eb3ca"
+  integrity sha512-nktQYRnIFrh4DdXiCBjHnsHOMZXDIVcP9qlm/DMfxmjJMtpMGrSZCOKP8j7kDhObNHyqlicwoGLd+a4hf4x9ww==
 
 "@vue/reactivity@3.0.11":
   version "3.0.11"
@@ -1581,9 +1586,9 @@ destroy@~1.0.4:
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
 detect-node@^2.0.4:
-  version "2.0.5"
-  resolved "https://registry.npmjs.org/detect-node/-/detect-node-2.0.5.tgz#9d270aa7eaa5af0b72c4c9d9b814e7f4ce738b79"
-  integrity sha512-qi86tE6hRcFHy8jI1m2VG+LaPUR1LhqDa5G8tVjuUXmOrpuAgqsA1pN0+ldgr3aKUH+QLI9hCY/OcRYisERejw==
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/detect-node/-/detect-node-2.1.0.tgz#c9c70775a49c3d03bc2c06d9a73be550f978f8b1"
+  integrity sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g==
 
 dir-glob@^3.0.1:
   version "3.0.1"
@@ -1666,9 +1671,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.723:
-  version "1.3.727"
-  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.727.tgz#857e310ca00f0b75da4e1db6ff0e073cc4a91ddf"
-  integrity sha512-Mfz4FIB4FSvEwBpDfdipRIrwd6uo8gUDoRDF4QEYb4h4tSuI3ov594OrjU6on042UlFHouIJpClDODGkPcBSbg==
+  version "1.3.728"
+  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.728.tgz#dbedd6373f595ae10a13d146b66bece4c1afa5bd"
+  integrity sha512-SHv4ziXruBpb1Nz4aTuqEHBYi/9GNCJMYIJgDEXrp/2V01nFXMNFUTli5Z85f5ivSkioLilQatqBYFB44wNJrA==
 
 emojis-list@^3.0.0:
   version "3.0.0"
@@ -1733,9 +1738,9 @@ esbuild-loader@~2.13.0:
     webpack-sources "^2.2.0"
 
 esbuild@^0.11.19, esbuild@^0.11.20:
-  version "0.11.20"
-  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.11.20.tgz#7cefa1aee8b372c184e42457885f7ce5d3e62a1e"
-  integrity sha512-QOZrVpN/Yz74xfat0H6euSgn3RnwLevY1mJTEXneukz1ln9qB+ieaerRMzSeETpz/UJWsBMzRVR/andBht5WKw==
+  version "0.11.23"
+  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.11.23.tgz#c42534f632e165120671d64db67883634333b4b8"
+  integrity sha512-iaiZZ9vUF5wJV8ob1tl+5aJTrwDczlvGP0JoMmnpC2B0ppiMCu8n8gmy5ZTGl5bcG081XBVn+U+jP+mPFm5T5Q==
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -1952,9 +1957,9 @@ forwarded@~0.1.2:
   integrity sha1-mMI9qxF1ZXuMBXPozszZGw/xjIQ=
 
 fraction.js@^4.0.13:
-  version "4.0.13"
-  resolved "https://registry.npmjs.org/fraction.js/-/fraction.js-4.0.13.tgz#3c1c315fa16b35c85fffa95725a36fa729c69dfe"
-  integrity sha512-E1fz2Xs9ltlUp+qbiyx9wmt2n9dRzPsS11Jtdb8D2o+cC7wr9xkkKsVKJuBX0ST+LVS+LhLO+SbLJNtfWcJvXA==
+  version "4.1.0"
+  resolved "https://registry.npmjs.org/fraction.js/-/fraction.js-4.1.0.tgz#229ec1cedc8c3c7e5d2d20688ba64f0a43af5830"
+  integrity sha512-o9lSKpK0TDqDwTL24Hxqi6I99s942l6TYkfl6WvGWgLOIFz/YonSGKfiSeMadoiNvTfqnfOa9mjb5SGVbBK9/w==
 
 fresh@0.5.2:
   version "0.5.2"
@@ -2858,9 +2863,9 @@ node-forge@^0.10.0:
   integrity sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA==
 
 node-releases@^1.1.71:
-  version "1.1.71"
-  resolved "https://registry.npmjs.org/node-releases/-/node-releases-1.1.71.tgz#cb1334b179896b1c89ecfdd4b725fb7bbdfc7dbb"
-  integrity sha512-zR6HoT6LrLCRBwukmrVbHv0EpEQjksO6GmFcZQQuCAy139BEsoVKPYnf3jongYW83fAa1torLGYwxxky/p28sg==
+  version "1.1.72"
+  resolved "https://registry.npmjs.org/node-releases/-/node-releases-1.1.72.tgz#14802ab6b1039a79a0c7d662b610a5bbd76eacbe"
+  integrity sha512-LLUo+PpH3dU6XizX3iVoubUNheF/owjXCZZ5yACDxNnPtgFuludV1ZL3ayK1kVep42Rmm0+R9/Y60NQbZ2bifw==
 
 normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
@@ -3115,9 +3120,9 @@ postcss-csso@^5.0.1:
     csso "^4.0.2"
 
 postcss-loader@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.npmjs.org/postcss-loader/-/postcss-loader-5.2.0.tgz#ccd6668a778902d653602289c765a8bc481986dc"
-  integrity sha512-uSuCkENFeUaOYsKrXm0eNNgVIxc71z8RcckLMbVw473rGojFnrUeqEz6zBgXsH2q1EIzXnO/4pEz9RhALjlITA==
+  version "5.3.0"
+  resolved "https://registry.npmjs.org/postcss-loader/-/postcss-loader-5.3.0.tgz#1657f869e48d4fdb018a40771c235e499ee26244"
+  integrity sha512-/+Z1RAmssdiSLgIZwnJHwBMnlABPgF7giYzTN2NOfr9D21IJZ4mQC1R2miwp80zno9M4zMD/umGI8cR+2EL5zw==
   dependencies:
     cosmiconfig "^7.0.0"
     klona "^2.0.4"
@@ -3378,9 +3383,9 @@ safe-buffer@>=5.1.0, safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@~5.2.0:
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
 sass-loader@^11.0.1:
-  version "11.1.0"
-  resolved "https://registry.npmjs.org/sass-loader/-/sass-loader-11.1.0.tgz#302a83e41834a7ac0cc9d7591e52688ef4ed92af"
-  integrity sha512-TS8KtLtMAqK68lBs0PRzoGf7ndz9m7pKo4BXvUzjGDDgWEY0qcoMMRVpaHfYM0i3/E6UsererqIpjs7dVA/p7A==
+  version "11.1.1"
+  resolved "https://registry.npmjs.org/sass-loader/-/sass-loader-11.1.1.tgz#0db441bbbe197b2af96125bebb7f4be6476b13a7"
+  integrity sha512-fOCp/zLmj1V1WHDZbUbPgrZhA7HKXHEqkslzB+05U5K9SbSbcmH91C7QLW31AsXikxUMaxXRhhcqWZAxUMLDyA==
   dependencies:
     klona "^2.0.4"
     neo-async "^2.6.2"
@@ -3840,9 +3845,11 @@ vue-router@4.0.0-rc.5:
   integrity sha512-Q8Tt6VGwGMN5qASeIdjSydU3uRADK9AUkqnbnzmTz+zZKS0W6GZOAuP235lf3y5/MqEFSKRJGaTWPEY0t+Rjmg==
 
 vue-router@^4.0.6:
-  version "4.0.6"
-  resolved "https://registry.npmjs.org/vue-router/-/vue-router-4.0.6.tgz#91750db507d26642f225b0ec6064568e5fe448d6"
-  integrity sha512-Y04llmK2PyaESj+N33VxLjGCUDuv9t4q2OpItEGU7POZiuQZaugV6cJpE6Qm1sVFtxufodLKN2y2dQl9nk0Reg==
+  version "4.0.8"
+  resolved "https://registry.npmjs.org/vue-router/-/vue-router-4.0.8.tgz#55d4290a3122444edbc91a3cd2492bb1d0cef494"
+  integrity sha512-42mWSQaH7CCBQDspQTHv63f34VEnZC20g9QNK4WJ/zW8SdIUeT6TQ2i/78fjF/pVBUPLBWrGhvB7uDnaz7O/pA==
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.10"
 
 vue@^3.0.0, vue@^3.0.11:
   version "3.0.11"
