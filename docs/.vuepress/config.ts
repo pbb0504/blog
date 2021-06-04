@@ -55,6 +55,7 @@ export default defineUserConfig<DefaultThemeOptions>({
             "/java/xml.md",
             "/java/注解.md",
             "/java/cookie和session.md",
+            "/java/Redis.md",
           ],
         },
       ],
