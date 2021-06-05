@@ -12,9 +12,5 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
-  "dependencies": {
-    "@vue/component-compiler-utils": "^3.2.0",
-    "@vuepress/plugin-search": "^1.8.2",
-    "@vuepress/shared-utils": "^1.8.2"
-  }
+  "dependencies": {}
 }
