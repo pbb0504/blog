@@ -161,4 +161,106 @@ pfadd key1 "java"
 
 ##### pfcount
 
+TODO
 
+## 10 事务|锁机制
+
+### 10.1 redis的事务
+
+Redis 事务可以一次执行多个命令， 并且带有以下三个重要的保证：
+
+- 批量操作在发送 EXEC 命令前被放入队列缓存。
+- 收到 EXEC 命令后进入事务执行，事务中任意命令执行失败，其余的命令依然被执行。
+- 在事务执行过程，其他客户端提交的命令请求不会插入到事务执行命令序列中。
+
+一个事务从开始到执行会经历以下三个阶段：
+
+- 开始事务。
+- 命令入队。
+- 执行事务。
+
+#### multi、exec、discard
+
+在redis-cli中输入命令`multi`，即可开启事务
+```cmd
+multi
+> OK
+set key2 value2
+> QUEUED
+set key3 value3
+> QUEUED
+exec
+> 1) OK
+> 2) OK
+
+multi
+> OK
+get key2
+> QUEUED
+get key3
+> QUEUED
+exec
+> 1) "value2"
+> 2) "value3"
+```
+
+:::: info
+如果中途放弃事务，输入`discard`即可退出，事务作废。
+::::
+
+### 10.2 锁
+
+#### 悲观锁
+
+每次访问资源时都认为会对资源进行修改，所以每次访问资源都要先上锁，等待此次操作结束后再解锁。
+
+#### 乐观锁
+
+在资源上加上版本号，每对资源进行操作，更新资源的版本号。当两个操作同时从数据库拿到资源，A对资源进行了更新，将更新后的版本号写入数据库，B想要对资源进行操作，发现数据库中资源的版本号已经比自己手上的版本号更新，就放弃本次操作，转而去获取最新的数据进行操作。
+
+### 10.3 watch
+
+在执行multi之前，可以对一个或多个key进行监视，如果在事务执行之前key被其他操作改动，那么事务将被打断。
+
+```cmd
+set key 1
+cmd1:
+> watch key
+> multi
+> increby key 1
+> exec
+
+cmd2:
+> watch key
+> multi
+> increby key 2
+> exec
+```
+
+操作顺序：
+1. cmd1 watch key
+2. cmd2 watch key
+3. cmd1 multi
+4. cmd2 multi
+5. cmd1 increby key 1
+6. cmd2 increby key 2 // 此时，两个事务都添加了命令
+7. cmd1 exec // SUCCESS
+8. cmd2 exec // nil  事务被打断
+
+#### unwatch
+
+取消对所有key的监视。如果在执行unwatch之前先执行了exec或discard，就无需再执行unwatch。
+
+### 10.4 redis事务三特性
+
+1. 单独的隔离操作
+    
+    事务中的所有命令会序列化，按顺序执行。在执行过程中，不会被其他客户端发来的命令打断
+
+2. 没有隔离级别的概念
+
+    队列中的命令在没有提交之前不会实际被执行。
+
+3. 不保证原子性
+
+    事务中如果有一条命令执行失败，不会回滚，而是继续执行之后的命令
