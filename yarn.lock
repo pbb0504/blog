@@ -2,129 +2,6 @@
 # yarn lockfile v1
 
 
-"@algolia/autocomplete-core@^1.0.0-alpha.35":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-core/-/autocomplete-core-1.1.0.tgz#774ab85c1ad8f0b64db5b1d44bb3ad8d65553cc5"
-  integrity sha512-Pb1NAG6jdM+0U1Wns2uMgJFqCdkpl+fLUIVOOnXpb/wc3+aqbSepOsA+cwYE/xe/EhO0gIm/F+NKwycHJtSUdg==
-  dependencies:
-    "@algolia/autocomplete-shared" "1.1.0"
-
-"@algolia/autocomplete-preset-algolia@^1.0.0-alpha.35":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-preset-algolia/-/autocomplete-preset-algolia-1.1.0.tgz#4cdf53de2c3e3ba1c9be8199d36742f99681eb8a"
-  integrity sha512-ouCw2as1QXUw09jEj09oMp371vRuygm+40QJMcHB0T1gbY2wELvHPM0tqug10NTA6OpM8atmV2nALLiIqCJs4w==
-  dependencies:
-    "@algolia/autocomplete-shared" "1.1.0"
-
-"@algolia/autocomplete-shared@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-shared/-/autocomplete-shared-1.1.0.tgz#d66ef20e26cb417b7fa4119de27ce042819395c5"
-  integrity sha512-rnuXLIisuzPn84OMg4/AIivzxX1nbPLtcVBriSZtde0L3Hn+cwQHQ8necC5SaOvUVjKW60G44LjqbJuGaL2ZUQ==
-
-"@algolia/cache-browser-local-storage@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/cache-browser-local-storage/-/cache-browser-local-storage-4.9.2.tgz#c618c8bc8330610649ae5860a18542f82fc58c57"
-  integrity sha512-R54LWoPgwvmBR7itDKdq/ZJKv5pbtu6cVHovPU9l1QrtvZM0XcSh2c2MY8beELo+uMuTDQ007sTM8dsQ4C7Www==
-  dependencies:
-    "@algolia/cache-common" "4.9.2"
-
-"@algolia/cache-common@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/cache-common/-/cache-common-4.9.2.tgz#00eddf800d42c03b339465fdcdb7fbe49a3054aa"
-  integrity sha512-50EffDYcFi08CpSvYAgRUplqj3/xaAqP4S5wuHG7Gr1ZLQpKBP7GxmPuFyjZgj7thOhsUS5DH8efVR/IpIrSBw==
-
-"@algolia/cache-in-memory@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/cache-in-memory/-/cache-in-memory-4.9.2.tgz#9181de93e300a58722ee6c29bc33261c411f9b03"
-  integrity sha512-RF4Z6XFOfS5G/PwtUddBoLEwTBy1HsimoXRpglnGftJH24alL9X2jCuCz9t12ND2o5eDDlbNVAqLfu8T0UQRQg==
-  dependencies:
-    "@algolia/cache-common" "4.9.2"
-
-"@algolia/client-account@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/client-account/-/client-account-4.9.2.tgz#a9ac94f951b231760f1615e5ac9409d1f7c7b89a"
-  integrity sha512-E67xDSaHed38fIdVT/Jrnr/HzohVoRfNGhTAKJG4sTy6K5AkrqzM/7ZRJp56bU38ZG4frvdQfxC/oGCFkn6bEA==
-  dependencies:
-    "@algolia/client-common" "4.9.2"
-    "@algolia/client-search" "4.9.2"
-    "@algolia/transporter" "4.9.2"
-
-"@algolia/client-analytics@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/client-analytics/-/client-analytics-4.9.2.tgz#d854defbfd5e1640d2b0abf4bb6d2dcd7afc09e1"
-  integrity sha512-zexfopj1zDgNfXHgl3e4S4ERlulKUTdnFgDvGBhsqyW/bDyqZ410HZhOuzVZE5SxJdy0qa0hCadmwVNgu1ND6A==
-  dependencies:
-    "@algolia/client-common" "4.9.2"
-    "@algolia/client-search" "4.9.2"
-    "@algolia/requester-common" "4.9.2"
-    "@algolia/transporter" "4.9.2"
-
-"@algolia/client-common@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/client-common/-/client-common-4.9.2.tgz#c75adccdc945ea21c484bd102354c0dd5166f795"
-  integrity sha512-++2h3FiHiRApAkD+Dxk+iW6wpvHjGZ5gSkDCYz4xVPsQdiGhZgTN34i+gjq6DeR3okax5HJ7hlfJw10aCuiB8g==
-  dependencies:
-    "@algolia/requester-common" "4.9.2"
-    "@algolia/transporter" "4.9.2"
-
-"@algolia/client-recommendation@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/client-recommendation/-/client-recommendation-4.9.2.tgz#b7de178e1d8146da5255afe3ccbd0ff69bd687d7"
-  integrity sha512-BbcC+7XiPoAwPferoPgskMUIvioTd7+XoNT4n3sQsoe8YqNJ3u/ngrAxKmpcrEf13BpFT7XBhPm2FQAhlZpvug==
-  dependencies:
-    "@algolia/client-common" "4.9.2"
-    "@algolia/requester-common" "4.9.2"
-    "@algolia/transporter" "4.9.2"
-
-"@algolia/client-search@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/client-search/-/client-search-4.9.2.tgz#2253ddacb75e768919ec3a6c969a409f2dbda2aa"
-  integrity sha512-z+wBEcMCFBzn+7s0lhk4miFR0fm5X4QXlutPVhSXACHD+uznRoRbmu31k7ZB6CgqqjT8E8Lsjif6rWX+wwtgyA==
-  dependencies:
-    "@algolia/client-common" "4.9.2"
-    "@algolia/requester-common" "4.9.2"
-    "@algolia/transporter" "4.9.2"
-
-"@algolia/logger-common@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/logger-common/-/logger-common-4.9.2.tgz#8a5d7c060bf7d514bbf186fbc5bae16a59acb8f1"
-  integrity sha512-D9wxMCLRLZtz0BZ8yecDDGSDkiq6M2KImdckZ2TPcSqQPGsypInSvFSKVa4os//IkmE9NFVC2o1kFYedZmzhZg==
-
-"@algolia/logger-console@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/logger-console/-/logger-console-4.9.2.tgz#da382309350e1c114e2a0c8fc92b3a10c408c189"
-  integrity sha512-HM5PQ1cvUbMFuAo493f1CpYNFteVHrUtM/sGOcS8zndML2ix72Qvyih7hEGGawHy2E2hYSNYcSHfL/gahTKiCg==
-  dependencies:
-    "@algolia/logger-common" "4.9.2"
-
-"@algolia/requester-browser-xhr@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/requester-browser-xhr/-/requester-browser-xhr-4.9.2.tgz#227e530c2c20a6a1db3ca68bf76ec43001d0decd"
-  integrity sha512-gOeI5ZmPt/rayRYf1Sgn3/Yp3MKuVEypibp1CyBpie/q0CHA08O4RoiY93qnG83dfy9tkfmYqKCdXlBednGVbg==
-  dependencies:
-    "@algolia/requester-common" "4.9.2"
-
-"@algolia/requester-common@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/requester-common/-/requester-common-4.9.2.tgz#f28edf021ce1f02c6fad7f205d86d7458ff0620a"
-  integrity sha512-B1cb69f5zbDgUQifx/ZDqFK9dpOSsg24Mq/5YlqkP3EyAVPVBooeDLUDSrgBLq2j1clUQ9H3yPwX8uRTzR/eYw==
-
-"@algolia/requester-node-http@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/requester-node-http/-/requester-node-http-4.9.2.tgz#3ad600d653ff4c4342e4710303ef467269166c45"
-  integrity sha512-YBm4R4gUmlXFnPAxQAZEWOSq6xkWKN7mAJWvM8V+2W9a4qlJnxXj+fi7EJytAR8qc3vDXRWcmzYnsS246WhJ8g==
-  dependencies:
-    "@algolia/requester-common" "4.9.2"
-
-"@algolia/transporter@4.9.2":
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/@algolia/transporter/-/transporter-4.9.2.tgz#e3016b211c6fddf32d510cae8e383ba378ecceb0"
-  integrity sha512-YvQKRU76HR850X1DK1OgcrjvvCyp/8FaYc74LHOAAuc9awcNuJY4NZjxHMU/Mm8TT4UKKX9cjGTrP/WJpu5VxA==
-  dependencies:
-    "@algolia/cache-common" "4.9.2"
-    "@algolia/logger-common" "4.9.2"
-    "@algolia/requester-common" "4.9.2"
-
 "@babel/code-frame@^7.0.0":
   version "7.14.5"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.14.5.tgz#23b08d740e83f49c5e59945fbf1b43e80bbf4edb"
@@ -158,24 +35,6 @@
   dependencies:
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
-
-"@nodelib/fs.scandir@2.1.5":
-  version "2.1.5"
-  resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
-  integrity sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==
-  dependencies:
-    "@docsearch/react" "3.0.0-alpha.31"
-    preact "^10.0.0"
-
-"@docsearch/react@3.0.0-alpha.31":
-  version "3.0.0-alpha.31"
-  resolved "https://registry.yarnpkg.com/@docsearch/react/-/react-3.0.0-alpha.31.tgz#3389cf4c7695e3a87a14b86e462ae08a8e08b84e"
-  integrity sha512-rgWTJqbG9CdX2Z0kfhoijhD2CcIHAV1j66Nc2LzDY5rYMqzqa4x1Xi+tISxZysjWwWacnlo6QL/50ogXXr6gaw==
-  dependencies:
-    "@algolia/autocomplete-core" "^1.0.0-alpha.35"
-    "@algolia/autocomplete-preset-algolia" "^1.0.0-alpha.35"
-    "@docsearch/css" "3.0.0-alpha.31"
-    algoliasearch "^4.0.0"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -302,16 +161,6 @@
   resolved "https://registry.npmjs.org/@types/linkify-it/-/linkify-it-3.0.1.tgz#4d26a9efe3aa2caf829234ec5a39580fc88b6001"
   integrity sha512-pQv3Sygwxxh6jYQzXaiyWDAHevJqWtqDUv6t11Sa9CPGiXny66II7Pl6PR8QO5OVysD6HYOkHMeBgIjLnk9SkQ==
 
-"@types/markdown-it@^10.0.2":
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/@types/markdown-it/-/markdown-it-10.0.3.tgz#a9800d14b112c17f1de76ec33eff864a4815eec7"
-  integrity sha512-daHJk22isOUvNssVGF2zDnnSyxHhFYhtjeX4oQaKD6QzL3ZR1QSgiD1g+Q6/WSWYVogNXYDXODtbgW/WiFCtyw==
-  dependencies:
-    "@types/highlight.js" "^9.7.0"
-    "@types/linkify-it" "*"
-    "@types/mdurl" "*"
-    highlight.js "^9.7.0"
-
 "@types/markdown-it@^12.0.2":
   version "12.0.2"
   resolved "https://registry.yarnpkg.com/@types/markdown-it/-/markdown-it-12.0.2.tgz#153e5477970ed2a47b2f619ed4ab66f870de8a04"
@@ -350,15 +199,6 @@
   version "1.2.3"
   resolved "https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.3.tgz#7ee330ba7caafb98090bece86a5ee44115904c2c"
   integrity sha512-ewFXqrQHlFsgc09MK5jP5iR7vumV/BYayNC6PgJO2LPe8vrnNFyjQjSppfEngITi0qvfKtzFvgKymGheFM9UOA==
-
-"@types/react@^17.0.0":
-  version "17.0.11"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.11.tgz#67fcd0ddbf5a0b083a0f94e926c7d63f3b836451"
-  integrity sha512-yFRQbD+whVonItSk7ZzP/L+gPTJVBkL/7shLEF+i9GC/1cV3JmUxEQz6+9ylhUpWSDuqo1N9qEvqS6vTj4USUA==
-  dependencies:
-    "@types/prop-types" "*"
-    "@types/scheduler" "*"
-    csstype "^3.0.2"
 
 "@types/retry@^0.12.0":
   version "0.12.0"
@@ -464,7 +304,7 @@
     "@vue/compiler-ssr" "3.1.1"
     "@vue/shared" "3.1.1"
 
-"@vue/shared@3.1.1", "@vue/shared@^3.0.3", "@vue/shared@^3.1.1":
+"@vue/shared@3.1.1", "@vue/shared@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.1.1.tgz#2287cfc3dc20e5b20aeb65c2c3a56533bdca801c"
   integrity sha512-g+4pzAw7PYSjARtLBoDq6DmcblX8i9KJHSCnyM5VDDFFifUaUT9iHbFpOF/KOizQ9f7QAqU2JH3Y6aXjzUMhVA==
@@ -516,15 +356,6 @@
     envinfo "^7.8.1"
     esbuild "^0.11.20"
 
-"@vuepress/client@2.0.0-alpha.1":
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/client/-/client-2.0.0-alpha.1.tgz#ba6d22b205463364daf40695050a1b0c7bae5be6"
-  integrity sha512-EwKtBe6t3yoSaPGpvJwrNdYMwSGeC8aJxePlHwXHmpD88CzR05OcicJI5qquOpsAzq340FimWzroEAANq6DvpA==
-  dependencies:
-    "@vuepress/shared" "2.0.0-alpha.1"
-    vue "^3.0.0"
-    vue-router "4.0.0-rc.5"
-
 "@vuepress/client@2.0.0-beta.18":
   version "2.0.0-beta.18"
   resolved "https://registry.yarnpkg.com/@vuepress/client/-/client-2.0.0-beta.18.tgz#3c7388a225691e2717916c3341ac4964c3e8e276"
@@ -533,18 +364,6 @@
     "@vuepress/shared" "2.0.0-beta.18"
     vue "^3.1.1"
     vue-router "^4.0.8"
-
-"@vuepress/core@2.0.0-alpha.1":
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/core/-/core-2.0.0-alpha.1.tgz#9db4824d677577cb0292569c7bae4a0686928345"
-  integrity sha512-nRvHZMdlgMKyXqPXHck71Oh2tP4bD6hitixCVErbul9P/AZzpU5PbNxrLXB08cBixPiTVf8/ygDYJcZxfYw/Hg==
-  dependencies:
-    "@vuepress/client" "2.0.0-alpha.1"
-    "@vuepress/markdown" "2.0.0-alpha.1"
-    "@vuepress/shared" "2.0.0-alpha.1"
-    "@vuepress/utils" "2.0.0-alpha.1"
-    gray-matter "^4.0.2"
-    toml "^3.0.0"
 
 "@vuepress/core@2.0.0-beta.18":
   version "2.0.0-beta.18"
@@ -557,19 +376,6 @@
     "@vuepress/utils" "2.0.0-beta.18"
     gray-matter "^4.0.3"
     toml "^3.0.0"
-
-"@vuepress/markdown@2.0.0-alpha.1":
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/markdown/-/markdown-2.0.0-alpha.1.tgz#89269e8c94574d2711da01b71acb023c626132ff"
-  integrity sha512-RNT7HkcxzY7ugWbA+/HYb/7GVtN7e5euO4OLyXojoMrm303+P8XCcMtVu7bl96IFp1CDpDmEtK/2eSbgF7KrSg==
-  dependencies:
-    "@types/markdown-it" "^10.0.2"
-    "@vuepress/shared" "2.0.0-alpha.1"
-    "@vuepress/utils" "2.0.0-alpha.1"
-    markdown-it "^12.0.1"
-    markdown-it-anchor "^6.0.0"
-    markdown-it-emoji "^2.0.0"
-    prismjs "^1.22.0"
 
 "@vuepress/markdown@2.0.0-beta.18":
   version "2.0.0-beta.18"
@@ -618,22 +424,6 @@
     "@vuepress/utils" "2.0.0-beta.18"
     markdown-it "^12.0.6"
     markdown-it-container "^3.0.0"
-
-"@vuepress/plugin-docsearch@^2.0.0-alpha.1":
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-docsearch/-/plugin-docsearch-2.0.0-alpha.1.tgz#50034a2f738f80abaecca7135e94e480fd85566a"
-  integrity sha512-zCAju41kynGJFP12SoASxik28nWLqFdBDMwUWkdOyUFnui68zewSEx7S1M0L/RM8psl/4KqsS/oNO2PcK8xSeQ==
-  dependencies:
-    "@docsearch/css" "3.0.0-alpha.31"
-    "@docsearch/js" "3.0.0-alpha.31"
-    "@types/react" "^17.0.0"
-    "@vuepress/client" "2.0.0-alpha.1"
-    "@vuepress/core" "2.0.0-alpha.1"
-    "@vuepress/shared" "2.0.0-alpha.1"
-    "@vuepress/utils" "2.0.0-alpha.1"
-    preact "^10.0.0"
-    vue "^3.0.0"
-    vue-router "4.0.0-rc.5"
 
 "@vuepress/plugin-git@2.0.0-beta.18":
   version "2.0.0-beta.18"
@@ -694,13 +484,6 @@
     "@vuepress/utils" "2.0.0-beta.18"
     vue "^3.1.1"
 
-"@vuepress/shared@2.0.0-alpha.1":
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/shared/-/shared-2.0.0-alpha.1.tgz#92e4f95056351c22a07e62373753bad4d7142979"
-  integrity sha512-W0tLKLV9R3GDzT2LjXbyOpM8tgPNbhmzHJA4JlrifRsxzmugxlxbn24lL6G0mWd21ZJ2wj5tgRA8k7NCJ9jGVQ==
-  dependencies:
-    "@vue/shared" "^3.0.3"
-
 "@vuepress/shared@2.0.0-beta.18":
   version "2.0.0-beta.18"
   resolved "https://registry.yarnpkg.com/@vuepress/shared/-/shared-2.0.0-beta.18.tgz#0136958463f8d9ceaad7fb1fb6d68be647cdd1ed"
@@ -730,23 +513,6 @@
     sass-loader "^12.1.0"
     vue "^3.1.1"
     vue-router "^4.0.8"
-
-"@vuepress/utils@2.0.0-alpha.1":
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/utils/-/utils-2.0.0-alpha.1.tgz#e68f466408e70680d9ff8c561311d10a0a813b0a"
-  integrity sha512-qipGA5fDAkD49m/6o6Puks+Nke4wJ5rjIDGAY2jZRbULCVVAyKBMXXhckGFvtcPCKtFKU1hP897gG3NCvYYHxg==
-  dependencies:
-    "@types/debug" "^4.1.5"
-    "@types/fs-extra" "^9.0.1"
-    "@types/hash-sum" "^1.0.0"
-    "@vuepress/shared" "2.0.0-alpha.1"
-    chalk "^4.1.0"
-    debug "^4.2.0"
-    fs-extra "^9.0.1"
-    globby "^11.0.1"
-    hash-sum "^2.0.0"
-    ora "^5.1.0"
-    upath "^1.2.0"
 
 "@vuepress/utils@2.0.0-beta.18":
   version "2.0.0-beta.18"
@@ -932,26 +698,6 @@ ajv@^6.12.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-algoliasearch@^4.0.0:
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/algoliasearch/-/algoliasearch-4.9.2.tgz#4aa1810736ff67b0e3b2e7e447fc84d8519bf877"
-  integrity sha512-Njdx8Bg8q73qnzKj00BxVbFFVvI+WSxirWKmSz2nmJ0xiMTizLxpSxQO2ODtCHWSDsFMqb04sB2tzoSrJPlpUg==
-  dependencies:
-    "@algolia/cache-browser-local-storage" "4.9.2"
-    "@algolia/cache-common" "4.9.2"
-    "@algolia/cache-in-memory" "4.9.2"
-    "@algolia/client-account" "4.9.2"
-    "@algolia/client-analytics" "4.9.2"
-    "@algolia/client-common" "4.9.2"
-    "@algolia/client-recommendation" "4.9.2"
-    "@algolia/client-search" "4.9.2"
-    "@algolia/logger-common" "4.9.2"
-    "@algolia/logger-console" "4.9.2"
-    "@algolia/requester-browser-xhr" "4.9.2"
-    "@algolia/requester-common" "4.9.2"
-    "@algolia/requester-node-http" "4.9.2"
-    "@algolia/transporter" "4.9.2"
-
 ansi-html@^0.0.7:
   version "0.0.7"
   resolved "https://registry.npmjs.org/ansi-html/-/ansi-html-0.0.7.tgz#813584021962a9e9e6fd039f940d12f56ca7859e"
@@ -1022,11 +768,6 @@ async@^2.6.2:
   integrity sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==
   dependencies:
     lodash "^4.17.14"
-
-at-least-node@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
-  integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
 autoprefixer@^10.2.6:
   version "10.2.6"
@@ -2629,7 +2370,7 @@ markdown-it-emoji@^2.0.0:
   resolved "https://registry.npmjs.org/markdown-it-emoji/-/markdown-it-emoji-2.0.0.tgz#3164ad4c009efd946e98274f7562ad611089a231"
   integrity sha512-39j7/9vP/CPCKbEI44oV8yoPJTpvfeReTn/COgRhSpNrjWF3PfP/JUxxB0hxV6ynOY8KH8Y8aX9NMDdo6z+6YQ==
 
-markdown-it@^12.0.1, markdown-it@^12.0.6:
+markdown-it@^12.0.6:
   version "12.0.6"
   resolved "https://registry.npmjs.org/markdown-it/-/markdown-it-12.0.6.tgz#adcc8e5fe020af292ccbdf161fe84f1961516138"
   integrity sha512-qv3sVLl4lMT96LLtR7xeRJX11OUFjsaD5oVat2/SNBIb21bJXwal2+SklcRbTwGwqWpWH/HRtYavOoJE+seL8w==
@@ -2917,7 +2658,7 @@ open@^7.4.2:
     is-docker "^2.0.0"
     is-wsl "^2.1.1"
 
-ora@^5.1.0, ora@^5.4.1:
+ora@^5.4.1:
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/ora/-/ora-5.4.1.tgz#1b2678426af4ac4a509008e5e4ac9e9959db9e18"
   integrity sha512-5b6Y85tPxZZ7QytO+BQzysW31HJku27cRIlkbAXaNx+BdcVi+LlRFmVXzeF6a7JCwJpyw5c4b+YSVImQIrBpuQ==
@@ -3817,7 +3558,7 @@ vue-router@^4.0.8:
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.10"
 
-vue@^3.0.0, vue@^3.1.1:
+vue@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.1.1.tgz#9ad655758a0fa6c0dee5b3d2431d3912a9b381aa"
   integrity sha512-j9fj3PNPMxo2eqOKYjMuss9XBS8ZtmczLY3kPvjcp9d3DbhyNqLYbaMQH18+1pDIzzVvQCQBvIf774LsjjqSKA==
@@ -3826,7 +3567,7 @@ vue@^3.0.0, vue@^3.1.1:
     "@vue/runtime-dom" "3.1.1"
     "@vue/shared" "3.1.1"
 
-vuepress@^2.0.0-beta.16:
+vuepress@^2.0.0-beta.18:
   version "2.0.0-beta.18"
   resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-2.0.0-beta.18.tgz#df01006af32300c49f8a8a57bce29608fbf4e924"
   integrity sha512-9yK/Ok/HAepUV1FziZutFmpxxAfJYsQKrIUiG8DJFr0zzDgce1v8NvtHlXHu0HtHsMXHTsUO0eKHQPGEI2gXnA==
