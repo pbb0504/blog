@@ -30,11 +30,11 @@ export default defineUserConfig<DefaultThemeOptions>({
       {
         text: "Java",
         link: "/java/",
-      },
+      }/* ,
       {
         text: "首页",
         link: "/README.md",
-      },
+      }, */
     ],
     sidebar: {
       "/vue/": [
@@ -55,6 +55,7 @@ export default defineUserConfig<DefaultThemeOptions>({
             "/java/xml.md",
             "/java/注解.md",
             "/java/cookie和session.md",
+            "/java/Redis.md",
           ],
         },
       ],
@@ -63,21 +64,5 @@ export default defineUserConfig<DefaultThemeOptions>({
 
   // 插件配置
   plugins: [
-    /* [
-      '@vuepress/docsearch',
-      {
-        apiKey: '<API_KEY>',
-        indexName: '<INDEX_NAME>',
-        locales: {
-          '/': {
-            placeholder: 'Search Documentation',
-          },
-          '/zh/': {
-            placeholder: '搜索文档',
-          },
-        },
-      },
-    ], */
-    ["@vuepress/plugin-nprogress"],
   ],
 });
